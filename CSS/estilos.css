@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     /*formatando o fundo, o auto vai deixar a largura no automatico e o vh = porcentagem do altura*/
     /*background-size: auto 200vh;*/
@@ -44,7 +50,7 @@ a:hover {
 /*quando temos duas variaveis que vão receber os mesmo valores, podemos chamar as duas separando por virgula*/
 .site-subtitle,
 .site-title {
-    background-color: white;
+
     color: black;
     text-align: center;
 }
