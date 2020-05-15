@@ -1,0 +1,55 @@
+body {
+    /*formatando o fundo, o auto vai deixar a largura no automatico e o vh = porcentagem do altura*/
+    /*background-size: auto 200vh;*/
+    /*adicionar um fundo*/
+    background-image:url("imagens/tt.jpg");
+    height: 120vh;
+    /*mudar o estilo da fonte*/
+    font-family: Arial;
+}
+
+
+.menu {
+    /*la no html criamos uma classe menu, aqui chamamos ela e modificamos, nesse exemplo mudamos a cor do background*/
+    background-color: white;
+}
+
+
+a {
+    /*usamos uma funçao para tirar o sublinhado do link ('a') que por padrão já vem. Tambem podemos colocar sublinhado onde não tem*/
+    color: teal;
+    text-decoration: none;
+}
+/*e aqui acrescentamos o underline quando o mouse passar em cima de 'a'*/
+a:hover {
+    text-decoration: underline;
+}
+
+
+.menu ul {
+    /*colocar todas as opções do menu em linha e não em coluna*/
+    display: flex;
+    /*dar espaço de uma opção a outra*/
+    justify-content: space-around;
+}
+
+
+.menu li {
+    /*acessar a lista do menu para tirar as bolinhas da lista*/
+    list-style: none;
+    /*mudei o estilo da letras*/
+    font-family: cursive;
+}
+
+/*quando temos duas variaveis que vão receber os mesmo valores, podemos chamar as duas separando por virgula*/
+.site-subtitle,
+.site-title {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+/*e aqui damos continuidade no que vai ter em apenas uma das variaveis*/
+.site-subtitle {
+    font-style: italic;
+}
