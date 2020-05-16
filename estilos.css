@@ -16,6 +16,11 @@ body {
     font-family: Arial;
 }
 
+header{
+    height: 100vh;
+    display: flex;
+
+}
 
 .menu {
     /*la no html criamos uma classe menu, aqui chamamos ela e modificamos, nesse exemplo mudamos a cor do background*/
@@ -60,7 +65,7 @@ a:hover {
 /*e aqui damos continuidade no que vai ter em apenas uma das variaveis*/
 .site-subtitle {
     font-style: italic;
-    color:yellow;
+    
 }
 
 h3 { /*editando uma caixa com o texto "bolos"*/
