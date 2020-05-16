@@ -59,6 +59,7 @@ a:hover {
 /*e aqui damos continuidade no que vai ter em apenas uma das variaveis*/
 .site-subtitle {
     font-style: italic;
+    color:yellow;
 }
 
 h3 { /*editando uma caixa com o texto "bolos"*/
