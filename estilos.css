@@ -1,3 +1,4 @@
+/*reset do css*/
 * {
     /*Tirar a borda do layout*/
     margin: 0;
@@ -9,7 +10,7 @@ body {
     /*formatando o fundo, o auto vai deixar a largura no automatico e o vh = porcentagem do altura*/
     /*background-size: auto 200vh;*/
     /*adicionar um fundo*/
-    background-image:url("imagens/tt.jpg");
+    background-image:url("img/tt.jpg");
     height: 120vh;
     /*mudar o estilo da fonte*/
     font-family: Arial;
@@ -82,8 +83,9 @@ h3 { /*editando uma caixa com o texto "bolos"*/
     box-shadow: 10px 10px 10px 1px blue;
     font-style: italic;
     color: blue;
-    
+}
 
-
-
+.img-portfolio{
+    height: 140px;
+    width: 140px;
 }
