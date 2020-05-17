@@ -19,12 +19,28 @@ body {
 header{
     height: 100vh;
     display: flex;
+    /*centralizar horizontalmente*/
+    justify-content: center;
+    /*centralizar verticalmente*/
+    align-items: center;
 
 }
 
 .menu {
     /*la no html criamos uma classe menu, aqui chamamos ela e modificamos, nesse exemplo mudamos a cor do background*/
     background-color: white;
+    /*deixar o menu fixo na pagina*/
+    position: fixed;
+    width: 100vw;
+    /*definir a altra do position*/
+    top:0;
+}
+
+.menu a{
+    display: block;
+    /*aumentar a area de clique*/
+    padding: 10px 20px;
+
 }
 
 
