@@ -13,7 +13,8 @@ body {
     background-image:url("img/tt.jpg");
     height: 120vh;
     /*mudar o estilo da fonte*/
-    font-family: Arial;
+    /*font baixada do google fonts*/
+    font-family: 'Shadows Into Light', cursive;
 }
 
 /* criar uma função como se fosse um if, para dar responsividade*/
@@ -75,14 +76,13 @@ a:hover {
 .menu li {
     /*acessar a lista do menu para tirar as bolinhas da lista*/
     list-style: none;
-    /*mudei o estilo da letras*/
-    font-family: cursive;
+    
 }
 
 /*quando temos duas variaveis que vão receber os mesmo valores, podemos chamar as duas separando por virgula*/
 .site-subtitle,
 .site-title {
-
+    font-family: 'Dancing Script', cursive;
     color: black;
     text-align: center;
 }
@@ -90,6 +90,8 @@ a:hover {
 /*e aqui damos continuidade no que vai ter em apenas uma das variaveis*/
 .site-subtitle {
     font-style: italic;
+    /*atribuir uma altura de linha de uma frase á outra*/
+    line-height: 1.8em;
     
 }
 
@@ -114,8 +116,12 @@ h3 { /*editando uma caixa com o texto "bolos"*/
     font-style: italic;
     color: blue;
 }
+.portfolio h2{
+    font-family: 'Indie Flower', cursive;
+}
 
 .img-portfolio{
     height: 140px;
     width: 140px;
+    
 }
