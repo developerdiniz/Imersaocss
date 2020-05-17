@@ -16,8 +16,17 @@ body {
     font-family: Arial;
 }
 
+/* criar uma função como se fosse um if, para dar responsividade*/
+/*se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+    body {
+        font-size:14px;
+    }
+
+}
+
 header{
-    height: 100vh;
+    height: 50vh;
     display: flex;
     /*centralizar horizontalmente*/
     justify-content: center;
