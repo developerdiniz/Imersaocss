@@ -118,10 +118,33 @@ h3 { /*editando uma caixa com o texto "bolos"*/
 }
 .portfolio h2{
     font-family: 'Indie Flower', cursive;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.portfolio{
+    padding: 2em;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
+
+/*uma condição para configurar as figuras na tela para tela apartir de 550px*/
+@media (min-width: 550px){
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+
+
+.portfolio figure {
+    text-align:  center;
 }
 
 .img-portfolio{
-    height: 140px;
-    width: 140px;
-    
+    height: 200px;
+    width: 220px;  
 }
