@@ -85,6 +85,19 @@ a:hover {
     
 }
 
+.titulos{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: linear 2s animacaoTitulo  forwards;
+}
+
+@keyframes animacaoTitulo {
+    100% {
+        transform: scale(1) translateY(0);
+    opacity: 1;
+    }
+}
+
 /*quando temos duas variaveis que vão receber os mesmo valores, podemos chamar as duas separando por virgula*/
 .site-subtitle,
 .site-title {
@@ -162,7 +175,14 @@ h3 { /*editando uma caixa com o texto "bolos"*/
     height: 200px;
     width: 220px;
     object-fit: cover;
+    transition: transform 500ms ;
+ 
+
 }
+.img-portfolio:hover{
+    transform: scale(1.2);
+}
+
 .contato .icons{
     text-align: center;
 
