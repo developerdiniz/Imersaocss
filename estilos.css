@@ -136,20 +136,38 @@ h3 { /*editando uma caixa com o texto "bolos"*/
     font-style: italic;
     color: blue;
 }
+
+.sobre h2,
+.contato h2,
 .portfolio h2{
     font-family: 'Indie Flower', cursive;
     margin-bottom: 1.5em;
     font-size: 2em;
 }
 
+.sobre,
+.contato,
 .portfolio{
     padding: 2em;
+    min-height: 100vh;
+
+}
+@media(min-width 1200px){
+    .container{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1200px;
+    }
 }
 
-.portfolio .grid {
-    display: grid;
-    gap: 2em;
+.sobre p {
+    color: tomato;
+    text-indent: 1.4em;
+    margin-bottom: 1.4em;
+    text-align: justify;
 }
+
+
 
 /*uma condição para configurar as figuras na tela para tela apartir de 550px*/
 @media (min-width: 550px){
@@ -199,4 +217,41 @@ h3 { /*editando uma caixa com o texto "bolos"*/
 .contato a:hover {
     text-decoration: none;
     text-shadow: 10px 10px 10px rgba(100,200,50, 1);
+}
+.sobre .avatar {
+    float: left;
+
+
+}
+.card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+
+}
+.card:hover{
+    transform: rotateY(180deg);
+
+}
+.card-front,
+.card-back {
+    left: 0;
+    top: 0;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card-back{
+    background-color: thistle;
+    height: 200px;
+    width: 220px;
+    transform: rotateY(180deg);
+}
+
+.flip-card {
+    perspective: 500px;
+}
+
+.flip-car:hover .card {
+    transform: rotateY(180deg);
+
 }
