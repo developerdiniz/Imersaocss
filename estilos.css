@@ -50,9 +50,15 @@ header{
     display: block;
     /*aumentar a area de clique*/
     padding: 10px 20px;
-
+    transition: background-color 1s, color 2s;
 }
 
+.menu a:active,
+.menu a:hover {
+    /*colocar sombra quando passar o mouse no menu*/
+    background-color: teal;
+    color: violet;
+}
 
 a {
     /*usamos uma funçao para tirar o sublinhado do link ('a') que por padrão já vem. Tambem podemos colocar sublinhado onde não tem*/
@@ -156,4 +162,20 @@ h3 { /*editando uma caixa com o texto "bolos"*/
     height: 200px;
     width: 220px;
     object-fit: cover;
+}
+.contato .icons{
+    text-align: center;
+
+}
+
+.contato a {
+    color: black;
+    font-size: 8em;
+    transition: text-shadow 1s;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 10px 10px 10px rgba(100,200,50, 1);
 }
