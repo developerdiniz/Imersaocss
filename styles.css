@@ -10,11 +10,11 @@ body {
     /*formatando o fundo, o auto vai deixar a largura no automatico e o vh = porcentagem do altura*/
     /*background-size: auto 200vh;*/
     /*adicionar um fundo*/
-    background-image:url("img/tt.jpg");
+    background-image: linear-gradient(to left,#000080,#000000);
     height: 120vh;
     /*mudar o estilo da fonte*/
     /*font baixada do google fonts*/
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Playfair Display SC', serif;
 }
 
 /* criar uma função como se fosse um if, para dar responsividade*/
@@ -102,8 +102,8 @@ a:hover {
 /*quando temos duas variaveis que vão receber os mesmo valores, podemos chamar as duas separando por virgula*/
 .site-subtitle,
 .site-title {
-    font-family: 'Dancing Script', cursive;
-    color: black;
+    font-family: 'Sigmar One', cursive;
+    color: whitesmoke;
     text-align: center;
 }
 
@@ -119,7 +119,8 @@ a:hover {
 .sobre h2,
 .contato h2,
 .certificado h2{
-    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-family: 'Playfair Display SC', serif;
     margin-bottom: 1.5em;
     font-size: 2em;
 }
@@ -140,14 +141,17 @@ a:hover {
 }
 
 .sobre p {
+    color: white;
     text-indent:1em;
     margin-bottom: 0.1em;
     font-size: 3em;
+    font-family: 'Sigmar One', cursive;
 }
 .sobre b {
+    color: white;
     font-size: 2em;
     padding: 1em;
-    text-indent: left ;
+    font-family: 'Sigmar One', cursive;
 }
 
 .certificado .grid {
