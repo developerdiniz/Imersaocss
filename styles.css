@@ -94,23 +94,22 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
-
-
-
-.titulos{
+.titulo {
     transform: scale(0.2) translateY(50vh);
     opacity: 0;
-    animation: linear 2s animacaoTitulo  forwards;
-}
-
-@keyframes animacaoTitulo {
-    100% {
-        transform: scale(1) translateY(0);
-    opacity: 1;
+    animation: 1s ease 500ms animacaoTitulo forwards;
+  }
+  
+  @keyframes animacaoTitulo {
+    from {
+      transform: scale(0.2) translateY(50vh);
+      opacity: 0;
     }
-}
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
 
 /*quando temos duas variaveis que vão receber os mesmo valores, podemos chamar as duas separando por virgula*/
 .site-subtitle,
@@ -118,13 +117,14 @@ a:hover {
     font-family: 'Sigmar One', cursive;
     color: whitesmoke;
     text-align: center;
+    font-size: 40px;
 }
 
 /*e aqui damos continuidade no que vai ter em apenas uma das variaveis*/
 .site-subtitle {
     font-style: italic;
     /*atribuir uma altura de linha de uma frase á outra*/
-    line-height: 1.8em;
+    line-height: 50px;
     
 }
 
