@@ -167,7 +167,10 @@ h3 { /*editando uma caixa com o texto "bolos"*/
     text-align: justify;
 }
 
-
+.portfolio .grid {
+    display: grid;
+    gap: 2em;
+}
 
 /*uma condição para configurar as figuras na tela para tela apartir de 550px*/
 @media (min-width: 550px){
