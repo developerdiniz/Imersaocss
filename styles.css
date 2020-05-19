@@ -115,31 +115,10 @@ a:hover {
     
 }
 
-h3 { /*editando uma caixa com o texto "bolos"*/
-    /*editar a margen*/
-    margin: 20px;
-    /*editar a borda*/
-    border: 4px solid aquamarine;
-    /*espaçamento interno*/
-    padding: 10px;
-    /*altura*/
-    height: 50px;
-    /*largura*/
-    width: 80px;
-    /*sombra*/
-    /* primeiro valor: centralização da sombra junto a caixa no eixo horizontal,
-    segundo valor: centralização da sombra junto a caixa no eixo vertical,
-    terceiro valor: nitidez da sombra,
-    quarto valor: dimensão ou escala da sombra
-    ultimo: cor da sombra*/
-    box-shadow: 10px 10px 10px 1px blue;
-    font-style: italic;
-    color: blue;
-}
 
 .sobre h2,
 .contato h2,
-.portfolio h2{
+.certificado h2{
     font-family: 'Indie Flower', cursive;
     margin-bottom: 1.5em;
     font-size: 2em;
@@ -147,7 +126,7 @@ h3 { /*editando uma caixa com o texto "bolos"*/
 
 .sobre,
 .contato,
-.portfolio{
+.certificado{
     padding: 2em;
     min-height: 100vh;
 
@@ -161,26 +140,30 @@ h3 { /*editando uma caixa com o texto "bolos"*/
 }
 
 .sobre p {
-    color: tomato;
-    text-indent: 1.4em;
-    margin-bottom: 1.4em;
-    text-align: justify;
+    text-indent:1em;
+    margin-bottom: 0.1em;
+    font-size: 3em;
+}
+.sobre b {
+    font-size: 2em;
+    padding: 1em;
+    text-indent: left ;
 }
 
-.portfolio .grid {
+.certificado .grid {
     display: grid;
     gap: 2em;
 }
 
 /*uma condição para configurar as figuras na tela para tela apartir de 550px*/
 @media (min-width: 550px){
-    .portfolio .grid {
+    .certifcado .grid {
         grid-template-columns: 240px 240px;
     }
 }
 /*uma condição para configurar as figuras na tela para tela apartir de 880px*/
 @media (min-width: 880px){
-    .portfolio .grid {
+    .certificado .grid {
         /*ao inves de escrever o valor de px varias vezes, vamos usar uma função */
         grid-template-columns: repeat(3, 260px);
         justify-content: center;
@@ -189,11 +172,11 @@ h3 { /*editando uma caixa com o texto "bolos"*/
     }
 }
 
-.portfolio figure {
+.certificado figure {
     text-align:  center;
 }
 
-.img-portfolio {
+.img-certificado {
     height: 200px;
     width: 220px;
     object-fit: cover;
@@ -201,7 +184,7 @@ h3 { /*editando uma caixa com o texto "bolos"*/
  
 
 }
-.img-portfolio:hover{
+.img-certificado:hover{
     transform: scale(1.2);
 }
 
@@ -222,9 +205,12 @@ h3 { /*editando uma caixa com o texto "bolos"*/
     text-shadow: 10px 10px 10px rgba(100,200,50, 1);
 }
 .sobre .avatar {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
     float: left;
-
-
 }
 .card{
     position: relative;
