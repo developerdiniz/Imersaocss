@@ -1,17 +1,16 @@
-/*reset do css*/
+/* soft reset do css */
 * {
-    /*Tirar a borda do layout*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
 body {
-    /*formatando o fundo, o auto vai deixar a largura no automatico e o vh = porcentagem do altura*/
-    /*background-size: auto 200vh;*/
-    /*adicionar um fundo*/
+    /*cor de fundo*/
     background-image: linear-gradient(to left,#000080,#000000);
-    height: 120vh;
+    background-size: auto 100vh; 
+    /*formatando o fundo, o auto vai deixar a largura no automatico e o vh = porcentagem do altura*/
+    height: 100vh;
     /*mudar o estilo da fonte*/
     /*font baixada do google fonts*/
     font-family: 'Playfair Display SC', serif;
@@ -23,17 +22,31 @@ body {
     body {
         font-size:14px;
     }
-
 }
+/* breakpoint */
+@media (min-width: 600px) {
+    body {
+      background-attachment: fixed;
+      background-size: cover;
+      font-size: 18px;
+    }
+  }
+  
+  /* breakpoint */
+  @media (min-width: 1200px) {
+    body {
+     
+      font-size: 20px;
+    }
+  }
 
 header{
-    height: 50vh;
+    height: 80vh;
     display: flex;
     /*centralizar horizontalmente*/
     justify-content: center;
     /*centralizar verticalmente*/
     align-items: center;
-
 }
 
 .menu {
@@ -46,6 +59,16 @@ header{
     top:0;
     z-index: 1;
 }
+.menu ul {
+    /*colocar todas as opções do menu em linha e não em coluna*/
+    display: flex;
+    /*dar espaço de uma opção a outra*/
+    justify-content: space-around;
+}
+.menu li {
+    /*acessar a lista do menu para tirar as bolinhas da lista*/
+    list-style: none;
+}
 
 .menu a{
     display: block;
@@ -57,13 +80,13 @@ header{
 .menu a:active,
 .menu a:hover {
     /*colocar sombra quando passar o mouse no menu*/
-    background-color: teal;
-    color: violet;
+    background-color: #000080;
+    color: white;
 }
 
 a {
     /*usamos uma funçao para tirar o sublinhado do link ('a') que por padrão já vem. Tambem podemos colocar sublinhado onde não tem*/
-    color: teal;
+    color: #000080;
     text-decoration: none;
 }
 /*e aqui acrescentamos o underline quando o mouse passar em cima de 'a'*/
@@ -72,19 +95,9 @@ a:hover {
 }
 
 
-.menu ul {
-    /*colocar todas as opções do menu em linha e não em coluna*/
-    display: flex;
-    /*dar espaço de uma opção a outra*/
-    justify-content: space-around;
-}
 
 
-.menu li {
-    /*acessar a lista do menu para tirar as bolinhas da lista*/
-    list-style: none;
-    
-}
+
 
 .titulos{
     transform: scale(0.2) translateY(50vh);
@@ -198,7 +211,9 @@ a:hover {
 }
 
 .contato a {
-    color: black;
+
+    padding: 0.5em;
+    color: white;
     font-size: 8em;
     transition: text-shadow 1s;
 }
@@ -206,7 +221,7 @@ a:hover {
 .contato a:active,
 .contato a:hover {
     text-decoration: none;
-    text-shadow: 10px 10px 10px rgba(100,200,50, 1);
+    text-shadow: 0px 0px 20px rgb(57, 193, 235);
 }
 .sobre .avatar {
     height: 180px;
@@ -234,7 +249,7 @@ a:hover {
     backface-visibility: hidden;
 }
 .card-back{
-    background-color: thistle;
+    background-color: whitesmoke;
     height: 200px;
     width: 220px;
     transform: rotateY(180deg);
