@@ -173,6 +173,11 @@ a:hover {
     transition: transform 500ms;
     float: left;
 }
+@media (min-width: 600px){
+    .sobre .avatar{
+        clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        float: right;
+}
 
 .certificado .grid {
     display: grid;
@@ -187,7 +192,6 @@ a:hover {
 }
 /*uma condição para configurar as figuras na tela para tela apartir de 880px*/
 @media (min-width: 880px){
-    .sobre .avatar,
     .certificado .grid {
         /*ao inves de escrever o valor de px varias vezes, vamos usar uma função */
         grid-template-columns: repeat(3, 260px);
