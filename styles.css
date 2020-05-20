@@ -128,43 +128,50 @@ a:hover {
     
 }
 
-
-.sobre h2,
-.contato h2,
-.certificado h2{
-    color: white;
-    font-family: 'Playfair Display SC', serif;
-    margin-bottom: 1.5em;
-    font-size: 2em;
-}
-
 .sobre,
 .contato,
 .certificado{
     padding: 2em;
     min-height: 100vh;
-
 }
-@media(min-width 1200px){
+
+@media(min-width: 1200px){
     .container{
         margin-right: auto;
         margin-left: auto;
         max-width: 1200px;
     }
 }
+.sobre h2,
+.contato h2,
+.certificado h2{
+    color: white;
+    font-size: 2em;
+    font-family: 'Playfair Display SC', serif;
+    margin-bottom: 2em;
+}
 
 .sobre p {
     color: white;
-    text-indent:1em;
-    margin-bottom: 0.1em;
-    font-size: 3em;
+    text-indent:1.4em;
+    margin-bottom: 1.4em;
     font-family: 'Sigmar One', cursive;
+    text-align: justify;
 }
 .sobre b {
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     padding: 1em;
     font-family: 'Sigmar One', cursive;
+}
+
+.sobre .avatar {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    object-position: left bottom;
+    transition: transform 500ms;
+    float: left;
 }
 
 .certificado .grid {
@@ -223,14 +230,7 @@ a:hover {
     text-decoration: none;
     text-shadow: 0px 0px 20px rgb(57, 193, 235);
 }
-.sobre .avatar {
-    height: 180px;
-    width: 180px;
-    object-fit: cover;
-    object-position: left bottom;
-    transition: transform 500ms;
-    float: left;
-}
+
 .card{
     position: relative;
     transform-style: preserve-3d;
