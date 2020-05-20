@@ -14,6 +14,7 @@ body {
     /*mudar o estilo da fonte*/
     /*font baixada do google fonts*/
     font-family: 'Playfair Display SC', serif;
+    font-size: 12px;
 }
 
 /* criar uma função como se fosse um if, para dar responsividade*/
@@ -65,6 +66,7 @@ header{
     /*dar espaço de uma opção a outra*/
     justify-content: space-around;
 }
+
 .menu li {
     /*acessar a lista do menu para tirar as bolinhas da lista*/
     list-style: none;
@@ -120,17 +122,20 @@ a:hover {
     font-size: 40px;
 }
 
+.site-title{
+    font-size: 4em;
+}
 /*e aqui damos continuidade no que vai ter em apenas uma das variaveis*/
 .site-subtitle {
     font-style: italic;
     /*atribuir uma altura de linha de uma frase á outra*/
-    line-height: 50px;
+    line-height: 1.8em;
     
 }
 
 .sobre,
 .contato,
-.certificado{
+.certificado {
     padding: 2em;
     min-height: 100vh;
 }
@@ -142,11 +147,12 @@ a:hover {
         max-width: 1200px;
     }
 }
+
 .sobre h2,
 .contato h2,
 .certificado h2{
     color: white;
-    font-size: 2em;
+    font-size: em;
     font-family: 'Playfair Display SC', serif;
     margin-bottom: 2em;
 }
@@ -155,16 +161,25 @@ a:hover {
     color: white;
     text-indent:1.4em;
     margin-bottom: 1.4em;
-    font-family: 'Sigmar One', cursive;
+    /*font-family: 'Sigmar One', cursive;*/
     text-align: justify;
 }
-.sobre b {
+/*.sobre b {
     color: white;
     font-size: 1em;
     padding: 1em;
     font-family: 'Sigmar One', cursive;
+}*/
+.sobre a {
+    color: white;
+    text-decoration: underline;
+  }
+  
+.sobre a:hover {
+    background-color: cyan;
+    text-decoration: none;
+    color: magenta;
 }
-
 .sobre .avatar {
     height: 180px;
     width: 180px;
@@ -173,9 +188,9 @@ a:hover {
     transition: transform 500ms;
     float: left;
 }
-@media (min-width: 600px){
+@media (min-width: 560px){
     .sobre .avatar{
-        grid-template-columns: 240px 240px;
+        grid-template-columns: 140px 140px;
         float: right;
 }
 
@@ -185,8 +200,8 @@ a:hover {
 }
 
 /*uma condição para configurar as figuras na tela para tela apartir de 550px*/
-@media (min-width: 550px){
-    .certifcado .grid {
+@media (min-width: 560px){
+    .certificado .grid {
         grid-template-columns: 240px 240px;
     }
 }
@@ -197,24 +212,49 @@ a:hover {
         grid-template-columns: repeat(3, 260px);
         justify-content: center;
         align-content: center;
-        
+        height: calc(100vh - 8em - 48px);
     }
 }
-
-.certificado figure {
-    text-align:  center;
+.flip-card {
+    height: 180px;
+    perspective: 1000px;
 }
 
+.flip-car:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+}
+.card-front,
+.card-back {
+    left: 0;
+    top: 0;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+}
+.card-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .7);
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
+}
+.certificado figure{
+    text-align: center;
+}
 .img-certificado {
-    height: 200px;
-    width: 220px;
+    height: 180px;
+    width: 100%;
     object-fit: cover;
-    transition: transform 500ms ;
- 
-
-}
-.img-certificado:hover{
-    transform: scale(1.2);
+    object-position: left bottom;
+    transition: transform 500ms;
 }
 
 .contato .icons{
@@ -223,8 +263,7 @@ a:hover {
 }
 
 .contato a {
-
-    padding: 0.5em;
+    /*padding: 0.5em;*/
     color: white;
     font-size: 8em;
     transition: text-shadow 1s;
