@@ -298,12 +298,10 @@ a:hover {
     width: 220px;
     transform: rotateY(180deg);
 }
-
-.flip-card {
-    perspective: 500px;
-}
-
 .flip-car:hover .card {
     transform: rotateY(180deg);
 
+}
+.flip-card {
+    perspective: 500px;
 }
