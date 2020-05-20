@@ -199,7 +199,12 @@ a:hover {
     display: grid;
     gap: 2em;
 }
-
+@media (min-width: 400px){
+    .certificado .grid{
+        grid-template-columns: 240px 
+    }
+}
+/*
 /*uma condição para configurar as figuras na tela para tela apartir de 550px*/
 @media (min-width: 500px){
     .certificado .grid {
