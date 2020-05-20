@@ -42,7 +42,7 @@ body {
   }
 
 header{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     /*centralizar horizontalmente*/
     justify-content: center;
@@ -76,7 +76,7 @@ header{
     display: block;
     /*aumentar a area de clique*/
     padding: 10px 20px;
-    transition: background-color 1s, color 2s;
+    transition: background-color 1s, color 1s;
 }
 
 .menu a:active,
@@ -164,12 +164,12 @@ a:hover {
     /*font-family: 'Sigmar One', cursive;*/
     text-align: justify;
 }
-/*.sobre b {
+.sobre b {
     color: white;
     font-size: 1em;
     padding: 1em;
     font-family: 'Sigmar One', cursive;
-}*/
+}
 .sobre a {
     color: white;
     text-decoration: underline;
@@ -188,10 +188,11 @@ a:hover {
     transition: transform 500ms;
     float: left;
 }
-@media (min-width: 560px){
+@media (min-width: 600px){
     .sobre .avatar{
-        grid-template-columns: 140px 140px;
+        /*grid-template-columns: 140px 140px;*/
         float: right;
+    }
 }
 
 .certificado .grid {
@@ -224,11 +225,7 @@ a:hover {
     transform: rotateY(180deg);
 }
 
-.card {
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 3s;
-}
+
 .card-front,
 .card-back {
     left: 0;
@@ -278,7 +275,7 @@ a:hover {
 .card{
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 3s;
 
 }
 .card:hover{
@@ -292,12 +289,7 @@ a:hover {
     position: absolute;
     backface-visibility: hidden;
 }
-.card-back{
-    background-color: whitesmoke;
-    height: 200px;
-    width: 220px;
-    transform: rotateY(180deg);
-}
+
 .flip-car:hover .card {
     transform: rotateY(180deg);
 
