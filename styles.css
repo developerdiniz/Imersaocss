@@ -152,15 +152,16 @@ a:hover {
 .contato h2,
 .certificado h2{
     color: white;
-    font-size: em;
+    font-size: 2em;
     font-family: 'Playfair Display SC', serif;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .sobre p {
     color: white;
+    font-size: 2em;
     text-indent:1.4em;
-    margin-bottom: 1.4em;
+    margin-bottom: 1em;
     /*font-family: 'Sigmar One', cursive;*/
     text-align: justify;
 }
